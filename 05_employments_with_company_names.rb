@@ -171,3 +171,17 @@ crm = {
 #   Jane Otto
 #
 # ------- your code under here -----------
+crm[:people].each do |hash|
+  puts " #{hash[:first_name]} #{hash[:last_name]}"
+  hash[:employments].each do |hash2|
+    crm[:companies].each do |hash3|
+      hash2[:company_id]
+    puts "   #{hash2[:title]} at company #{hash2[:company_id]}"
+  end
+end
+
+
+
+# crm[:companies].each do |hash|
+#   puts " #{hash[1]} (#{hash[0]})"
+# end

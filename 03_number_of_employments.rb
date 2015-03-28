@@ -156,3 +156,6 @@ crm = {
 #   Jane - 0
 #
 # ------- your code under here -----------
+crm[:people].each do |hash|
+  puts " #{hash[:first_name]} - #{hash[:employments].count}"
+end

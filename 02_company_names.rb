@@ -150,3 +150,6 @@ crm = {
 #   Steuber, Wisozk and Gorczany (9)
 #
 # ------- your code under here -----------
+crm[:companies].each do |hash|
+  puts " #{hash[1]} (#{hash[0]})"
+end
